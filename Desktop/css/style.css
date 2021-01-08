@@ -1,0 +1,585 @@
+/* our framwork */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: cursive, Helvetica, sans-serif;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    color: gold;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background: gold;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 5px;
+    background: brown;
+}
+
+button,
+.logo {
+    cursor: pointer;
+}
+
+h2 {
+    font-family: cursive;
+    text-transform: capitalize;
+    color: brown;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 27px;
+    color: brown;
+    font-family: inherit;
+    text-transform: capitalize;
+    display: flex;
+    width: 20%;
+}
+
+hr {
+    display: flex;
+    width: 66%;
+    border-top: 1px solid brown;
+    height: 0;
+    margin: 20px 0px 20px 70px;
+}
+
+
+/* header bar */
+
+header {
+    width: 100%;
+    background: none;
+    height: 70px;
+    position: absolute;
+    top: 0;
+}
+
+header .head {
+    width: 100%;
+    display: flex;
+    height: 70px;
+    color: gold;
+}
+
+header .logo {
+    width: 20%;
+    float: left;
+    font-size: 25px;
+    padding: 17px 0;
+    color: inherit;
+}
+
+header .links {
+    float: right;
+    width: 50%;
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
+header .links ul {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    padding: 22px 0;
+}
+
+header .links ul li {
+    padding: 0 20px;
+    font-size: 17px;
+    float: right;
+    letter-spacing: 3px;
+    color: inherit;
+    cursor: pointer;
+}
+
+
+/* main page */
+
+main {
+    height: auto;
+    background: linen;
+    width: 100%;
+}
+
+
+/* first page = face page of design */
+
+main .face {
+    width: 100%;
+    height: 753px;
+    background: brown;
+    background-size: cover;
+}
+
+main .face .content {
+    width: 100%;
+    height: 753px;
+    padding: 200px 15px;
+    text-align: center;
+}
+
+main .face .content h1 {
+    font-size: 45px;
+    letter-spacing: 3px;
+    color: orange;
+    margin-bottom: 60px;
+}
+
+main .face .content h1 span:first-child {
+    display: block;
+    color: white;
+}
+
+main .face .content p {
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    width: 650px;
+    margin: auto auto 40px;
+    font-family: monospace;
+}
+
+main .face .content .fbtn {
+    background: orange;
+    color: brown;
+    padding: 5px 35px;
+    border: 0;
+    border-radius: 20px;
+    font-size: 17px;
+    letter-spacing: 4px;
+}
+
+
+/* secound page = page of best food order of resturant */
+
+main .best {
+    width: 100%;
+    overflow: hidden;
+    padding: 100px 15px;
+    font-family: monospace;
+    display: flex;
+}
+
+main .best .content {
+    width: 60%;
+}
+
+main .best .content main .best .content h4 {
+    font-family: -webkit-pictograph;
+    font-size: 25px;
+    color: brown;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+main .best .content p {
+    margin-bottom: 20px;
+}
+
+main .best .content .bbtn {
+    background: brown;
+    color: orange;
+    padding: 7px 30px;
+    border-radius: 40px;
+    border: 0;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+main .best .bimg {
+    padding: 15px;
+    width: 40%;
+    height: 255px;
+}
+
+main .best .bimg img {
+    background-size: cover;
+    object-fit: fill;
+    height: 255px;
+    width: 400px;
+}
+
+
+/* third page = most populer order */
+
+main .populer {
+    padding: 0px 15px 100px;
+    width: 100%;
+}
+
+main .head {
+    display: flex;
+    padding-bottom: 70px;
+    width: 100%;
+}
+
+main .populer .orders {
+    display: flex;
+    width: 100%;
+}
+
+main .populer .orders>div {
+    width: calc( 100% / 4);
+    height: auto;
+    padding: 0 15px;
+    display: table;
+    border-color: brown;
+}
+
+main .populer .orders>div>div {
+    background: brown;
+    color: orange;
+}
+
+main .populer .orders>div .ord {
+    height: 100%;
+    width: 100%;
+    background: white;
+    color: black;
+}
+
+main .populer .orders>div .ord img {
+    width: 100%;
+    height: 140px;
+}
+
+main .populer .orders>div .ord .content {
+    padding: 0 15px;
+}
+
+main .populer .orders>div .ord .content h5 {
+    font-size: 18px;
+    font-family: monospace;
+    padding: 10px 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+main .populer .orders>div .ord .content p {
+    font-family: system-ui;
+    font-size: 13px;
+    text-align: start;
+    margin: 0 0px 20px;
+    text-transform: capitalize;
+}
+
+main .populer .orders>div .ord .content .obtn {
+    position: relative;
+    bottom: 0px;
+    border-radius: 40px;
+    border: 0;
+    background: brown;
+    color: orange;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    text-align: start;
+    cursor: pointer;
+}
+
+main .populer .orders>div .ord .content span {
+    float: right;
+    text-align: end;
+    padding: 5px;
+    font-size: 14px;
+    font-family: cursive;
+}
+
+main .populer .orders>div .ord .content sup {
+    text-decoration: line-through;
+    color: red;
+    padding: 3px;
+}
+
+
+/* fourth page = special order today */
+
+main .special {
+    width: 100%;
+    padding: 0 0 100px;
+}
+
+main .special .head hr {
+    margin: 41px 0 0 100px;
+}
+
+main .special .sorder {
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    overflow: hidden;
+}
+
+main .special .sorder>div {
+    padding: 0px;
+    background: white;
+    display: table-caption;
+    position: relative;
+    height: 200px;
+    width: 286px;
+    margin: 0 15px 15px;
+    overflow: hidden;
+}
+
+main .special .sorder>div:first-child {
+    width: 500px;
+    height: 400px;
+}
+
+main .special .sorder>div:nth-child(2) {
+    width: 380px;
+    height: 200px;
+}
+
+main .special .sorder>div:nth-child(3) {
+    width: 175px;
+    height: 170px;
+    position: relative;
+    top: -185px;
+    left: 530px;
+}
+
+main .special .sorder>div:nth-child(4) {
+    width: 175px;
+    height: 170px;
+    position: relative;
+    top: -185px;
+    left: 530px;
+}
+
+main .special .sorder>div .sord img {
+    width: 100%;
+    object-fit: fill;
+    height: 100%;
+    z-index: 0;
+    position: relative;
+}
+
+main .special .sorder>div:first-child .img {
+    width: 500px;
+    height: 400px;
+    background-image: url(../img/bruschetta.jpg);
+    background-position: 0px center;
+    background-size: 500px 400px;
+}
+
+main .special .sorder>div:nth-child(2) .img {
+    width: 380px;
+    height: 200px;
+    background-image: url(../img/lasagne.jpg);
+    background-position: 0px center;
+    background-size: 380px 200px;
+}
+
+main .special .sorder>div:nth-child(3) .img {
+    width: 175px;
+    height: 170px;
+    background-image: url(../img/caprese-insalata.jpg);
+    background-position: 0px center;
+    background-size: 175px 170px;
+}
+
+main .special .sorder>div:nth-child(4) .img {
+    width: 175px;
+    height: 170px;
+    background-image: url(../img/panna-cotta.jpg);
+    background-position: 0px center;
+    background-size: 175px 170px;
+}
+
+main .special .sorder>div .sord .title {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 5px;
+    color: white;
+    font-size: 22px;
+    position: absolute;
+}
+
+main .special .sorder>div .sord .title:hover {
+    opacity: 1;
+}
+
+main .special .sorder>div .sord .title .hidtitle {
+    position: absolute;
+    bottom: 0;
+    height: 75px;
+    background: brown;
+    display: inherit;
+    width: 100%;
+    margin: 0 -5px;
+    color: orange;
+    padding: 20px;
+}
+
+
+/* fifth page = menu page */
+
+main .menu {
+    padding: 0 15px 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+main .menu .menucontent {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .menu .menucontent>div {
+    width: calc(96% / 4);
+    background: white;
+    margin: 0.5%;
+    display: table;
+}
+
+main .menu .menucontent>div h6 {
+    text-align: center;
+    font-size: 20px;
+    font-family: inherit;
+    color: brown;
+    padding: 20px 5px;
+    margin-bottom: 15px;
+    margin: 0 10px 15px;
+    border-bottom: 1px solid orange;
+}
+
+main .menu .menucontent>div ul {
+    list-style-type: none;
+    padding-left: 0;
+    padding: 0px;
+}
+
+main .menu .menucontent>div ul li {
+    padding: 8px 20px 15px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+
+/* about bar */
+
+main .about {
+    padding: 0 15px 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+main .about .content {
+    width: 100%;
+    display: flex;
+    background: linen;
+}
+
+main .about .content div {
+    width: 50%;
+}
+
+main .about .content>div p {
+    width: 100%;
+    padding: 50px 29px;
+}
+
+main .about .content>div span {
+    display: block;
+    padding: 10px 29px;
+    letter-spacing: 2px;
+}
+
+main .about .content img {
+    width: 50%;
+}
+
+
+/* contact bar */
+
+main .contact {
+    padding: 0 15px 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+main .contact .content {
+    background: white;
+    width: 100%;
+    display: flex;
+}
+
+main .contact .content .map {
+    width: 90%;
+    height: 500px;
+}
+
+main .contact .content .social {
+    width: 10%;
+    padding: 145px 15px;
+}
+
+main .contact .content .social ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+main .contact .content .social ul li {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin: 10px 12px;
+    cursor: pointer;
+}
+
+main .contact .content .social ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.showmore {
+    border: 0;
+    padding: 8px 20px;
+    background: brown;
+    color: orange;
+    border-radius: 40px;
+    margin: 30px 20px;
+    float: right;
+    position: relative;
+    cursor: pointer;
+}
+
+
+/* footer */
+
+footer {
+    padding: 25px;
+    width: 100%;
+    text-align: center;
+    font-family: monospace;
+    font-size: 13px;
+    background: linen;
+}

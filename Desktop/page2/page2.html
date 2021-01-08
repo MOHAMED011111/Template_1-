@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturant</title>
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    <div class="fullscreen-bg">
+        <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+            <source src="Vedios/restaurant.webm" type="video/webm">
+            <source src="Vedios/restaurant.mp4" type="video/mp4">
+            <source src="Vedios/restaurant.ogv" type="video/ogg">
+        </video>
+    </div>
+    <div class="nav-bar">
+        <div class="nav-logo">
+            <img src="Images/logo.png" alt="Logo For Resturant">
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#"><b>HOME</b></a></li>
+                <li><a href="#Menu"><b>Menu</b></a></li>
+                <li><a href="#about" ><b>About</b></a></li>
+                <li><a href="#signin"><b>Sign In</b></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="banner-title">
+        <h1><span>There is the most beautiful food <br></span> Not suitable for eating</h1>
+        <a href="../index.html"><button class="btn" onclick="pid()">EXPLORE</button></a>
+        <a href="../page3/page3.html"><button class="btn"  onclick="drink()">Drinks</button></a>
+    </div>
+<br><br>
+
+    <div class="Menu" id="Menu">
+        <div class="head">
+            <h1> Menu</h1>
+        </div>
+
+        <div class="none">
+
+            <div class="menu">
+                <h2> Chicken fried salad<span>25$</span></h2>
+                <p>You'll make it your business <br>to have leftover fried chicken.</p>
+                <br>
+                <img src="Images/ccc.jpg">
+            </div>
+            <div class="part">
+                <h2> Grilled chicken<span>35$</span></h2>
+                <p>There's enough variety here<br> to keep you thrilled.</p>
+                <br>
+                <img src="Images/iii.jpg">
+            </div>
+            <div class="part1">
+                <h2> Rice and chicken<span>45$</span></h2>
+                <p>Chicken and rice go well together<br> in everything from casseroles to soups.</p>
+                <br>
+                <img src="Images/qqq.jpg">
+            </div>
+            <div class="part2">
+                <h2> Meat and vegetables<span>15$</span></h2>
+                <p>May be simpler to follow<br> than other diet.</p>
+                <img src="Images/pp.jpg">
+            </div>
+
+        </div>
+
+        <div class="none1">
+            <div class="menu">
+                <h2> Meat and chili<span>35$</span></h2>
+                <p>Make delicious chili on your stove<br> or in your slow cooker.</p>
+                <br>
+                <img src="Images/hh.jpg">
+            </div>
+            <div class="part">
+                <h2> Potatoes with meat<span>65$</span></h2>
+                <p> Whether you're craving classic<br> steak and potatoes</p>
+                <br>
+                <img src="Images/nn.jpg">
+            </div>
+            <div class="part1">
+                <h2> Meat casserole<span>75$</span></h2>
+                <p>From stuffed shells to shepherd's<br> pie, these dishes are supremely<br> satisfying.</p>
+                <img src="Images/vvv.jpg">
+            </div>
+            <div class="part2">
+                <h2> Meat Fried salad<span>15$</span></h2>
+                <p>It’s not that is too much prep<br> work or that it takes too much time.</p>
+                <br>
+                <img src="Images/aaa.jpg">
+            </div>
+        </div>
+        
+        <div class="about" id="about">
+            <div>
+                <hr id="hr21">
+                <h3 id="h31">About</h3>
+                <hr id="hr21">
+            </div>
+            <br><br>
+            <div class="content">
+                <div>
+                    <p>We specialize in food. Here you will find all the delicious casserole like meat and chicken casserole. You can enjoy these dishes that
+                    were honored to us in our humble restaurant and we will be ready to try them. Do not make up and do not miss the opportunity and come to us.
+                    </p>
+                </div>
+                <img src="Images/aaa.jpg">
+            </div>
+            <br><br>
+            <hr id="hr21">
+        </div>
+       
+        <div id="signin">
+            <form class="form1">
+             <hr><hr>
+             <br><br>
+                <h2> Sign In </h2>
+             <br><br>   
+             <hr><hr>
+             <br><br>
+             <label > Firstname : </label>
+             <input type="text" name="fname" class="inp" ><br><br>
+             <label> Lastname : </label>
+             <input type="text" name="lname" class="inp" ><br><br>
+             <label> Number of orders : </label>
+             <input type="number" min="1" step="1" class="inp2">
+             <label> Meal number :</label>
+             <input type="number" min="1" max="12" step="1" class="inp2">
+             <br><br>
+<a href="#aud1" type="button" class="btnSignin" onclick="signin()" style="padding: 1px 135px 1px 135px; border: 3px  black inset;"><b>Sign in</b></a>      
+             <input type="reset"  class="btnSignin" >      
+             <hr><hr>
+             <br><br>
+            </form>
+         </div>
+                
+         <br><br>
+         <div id="aud1" >
+                <img src="Images/thank.jpg"  id="imgthank" >
+                <br><br>
+         </div> 
+         <script src="javaScript/script.js"></script>
+</body>
+
+</html>

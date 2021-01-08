@@ -1,0 +1,6 @@
+
+
+
+function drink() {
+    alert("meeeeeeeeeeeeeeeeeeeeeeeeeeedo");
+  }
